@@ -1,0 +1,268 @@
+    @import url('https://fonts.googleapis.com/css?family=Londrina+Outline|Londrina+Solid&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+    @font-face {
+        font-family: Oswald;
+        src: url('../fonts/Oswald/Oswald-Regular.ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    body {
+        font-family: 'Oswald', sans-serif;
+        background-color: #050b12;
+    }
+    
+    .fa-spinner {
+        animation: 1.5s linear 0s normal none infinite running carregando;
+    }
+    
+    @keyframes carregando {
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(180deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .video-background-holder {
+        position: relative;
+        background-color: black;
+        height: calc(100vh - 150px);
+        min-height: 25rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .video-background-holder video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+    
+    .video-background-content {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .video-background-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 1;
+    }
+    
+    .section,
+    body {
+        background-image: linear-gradient(to bottom, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #00ffff0a, #00ffff13, #00ffff1b, #00ffff23);
+    }
+    
+    h5,
+    h3,
+    label,
+    button {
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Londrina Solid', cursive;
+    }
+    
+    span.solid {
+        color: #00ffff;
+        font-family: 'Londrina Solid', cursive;
+    }
+    
+    span.out {
+        color: #00ffff;
+        font-family: 'Londrina Outline', cursive;
+    }
+    
+    h5.cabecalho .out,
+    h5.cabecalho .solid {
+        font-size: 40px;
+    }
+    
+    label,
+    button {
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    label.custom-control-label {
+        font-size: 16px;
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 0.1px;
+        text-transform: none;
+    }
+    
+    input.form-control {
+        max-width: 100%;
+        transition: max-width .5s ease-in;
+    }
+    
+    input.form-control.close {
+        max-width: 5px;
+    }
+    
+    .infos {
+        margin: 100px 0px 150px 0px;
+    }
+    
+    .btn-acamp {
+        font-weight: bold;
+        width: 80%;
+        padding: 8px 30px;
+        color: white;
+        background-color: #007bff;
+    }
+    
+    .btn-wp {
+        background-color: #25d366;
+    }
+    
+    .btn-wp-contato {
+        background-color: #075e54;
+    }
+    
+    .btn-acamp:hover {
+        opacity: 0.7;
+        color: white;
+    }
+    
+    .btn-acamp:focus {
+        opacity: 1;
+    }
+    
+    .top-timer {
+        font-size: 25px;
+        color: #ffffff;
+    }
+    
+    .timer div {
+        color: #00ffff;
+        border-radius: 10px;
+        display: inline-block;
+        font-family: 'Londrina Outline', cursive;
+        font-size: 55px;
+        font-weight: 400;
+        width: auto;
+        padding: 10px;
+        background-color: transparent;
+        box-shadow: 10px 50px 700px #00ffff87;
+    }
+    
+    .minutes,
+    .seconds,
+    .success {
+        font-family: 'Londrina Solid', cursive;
+    }
+    
+    .timer .smalltext {
+        font-family: 'Londrina Solid', cursive;
+        color: rgb(241, 240, 240);
+        font-size: 16px;
+        font-weight: 500;
+        display: block;
+        padding: 0;
+        width: auto;
+        border: none;
+        box-shadow: none;
+    }
+    
+    .timer #time-up {
+        margin: 8px 0 0;
+        text-align: left;
+        font-size: 14px;
+        font-style: normal;
+        color: #000000;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    .msg {
+        height: 75%;
+        width: 75%;
+        margin: 50px 0px;
+    }
+    
+    .formulario {
+        margin-top: 150px;
+    }
+    
+    .modal p {
+        font-weight: 100;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    .sign {
+        font-family: 'Caveat', cursive;
+        color: white;
+        margin: 0;
+    }
+    
+    .footer {
+        margin-bottom: 10px;
+    }
+    
+    .response {
+        margin: 50px 0px;
+    }
+    
+    .msg-alert {
+        margin: 0 auto;
+        padding: 15px 5px 15px 10px;
+        border-radius: 5px;
+        border-left-width: 8px;
+        margin: 0 auto;
+        font-size: 20px;
+        border: 1px solid #25d36500;
+        color: white;
+    }
+    
+    .msg-alert i {
+        margin-right: 6px;
+    }
+    
+    .danger {
+        border-width: 7px;
+        border-left-color: #d9534f;
+        background-color: #ffffff10;
+    }
+    
+    .warning {
+        border-width: 7px;
+        border-left-color: #f0ad4e;
+        background-color: #ffffff10;
+    }
+    
+    .info {
+        border-width: 7px;
+        border-left-color: #5bc0de;
+        background-color: #ffffff10;
+    }
+    
+    .success {
+        border-width: 7px;
+        border-left-color: rgb(0, 190, 79);
+        background-color: #ffffff10;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .g-recaptcha {
+        display: inline-block;
+    }
